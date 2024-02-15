@@ -1,6 +1,6 @@
 package com.leetcode;
 
-//LeetCode
+// LeetCode Solution
 
 
 
@@ -22,12 +22,74 @@ package com.leetcode;
 
 
 
+// Easy Collection
 
-//Easy Collection
+// Array
 
-//Array
-//  Remove Duplicates from Sorted Array
+// Remove Duplicates from Sorted Array
+// Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
+// Input: nums = [0,0,1,1,1,2,2,3,3,4] Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+
+
+//public class Solution {
+//public int removeDuplicates(int[] nums) {
+//	if (nums.length == 0)
+//		return 0;
+//
+//	int k = 1; // k points to the first unique element
+//	for (int i = 1; i < nums.length; i++) {
+//		if (nums[i] != nums[i - 1]) {
+//			nums[k++] = nums[i]; // Update the next unique element
+//		}
+//	}
+//	return k; // k represents the number of unique elements
+//}
+//
+//public static void main(String[] args) {
+//	Solution solution = new Solution();
+//
+//	int[] nums2 = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+//	int k2 = solution.removeDuplicates(nums2);
+//	System.out.println("Output: " + k2 + ", nums = " + java.util.Arrays.toString(nums2));
+//}
+//}
+
+//TC: O(n)
+//SC: O(1)
+
+
 //  Best Time to Buy and Sell Stock II
+
+//You are given an integer array prices where prices[i] is the price of a given stock on the ith day. On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time. However, you can buy it then immediately sell it on the same day. Find and return the maximum profit you can achieve.
+//Input: nums = [1,1,2] Output: 2, nums = [1,2,_]
+
+//public class Solution {
+// public int maxProfit(int[] prices) {
+//     int maxProfit = 0;
+//     
+//     for (int i = 1; i < prices.length; i++) {
+//         // If the current price is higher than the previous day, add the profit
+//         if (prices[i] > prices[i - 1]) {
+//             maxProfit += prices[i] - prices[i - 1];
+//         }
+//     }
+//     
+//     return maxProfit;
+// }
+//
+// public static void main(String[] args) {
+// 	Solution solution = new Solution();
+//
+//     int[] prices1 = {7, 1, 5, 3, 6, 4};
+//     int profit1 = solution.maxProfit(prices1);
+//     System.out.println("Output: " + profit1);
+//
+// }
+//}
+
+//TC: O(n)
+//SC: O(1) 
+
 //  Rotate Array
 //  Contains Duplicate
 //  Single Number
