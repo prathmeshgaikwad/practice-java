@@ -1,6 +1,6 @@
 package com.leetcode;
 
-// LeetCode Solution
+// LeetCode Solution .
 
 
 
